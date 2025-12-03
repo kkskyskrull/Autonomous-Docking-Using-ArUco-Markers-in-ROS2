@@ -4,14 +4,14 @@ https://github.com/kkskyskrull/Autonomous-Docking-Using-ArUco-Markers-in-ROS2.gi
 ROS2-based solution for autonomously docking a robot using ArUco markers. This project includes robot simulation, marker detection, and docking logic.
 
 ## Repository Structure
-'''
+
 ros2_ws/
 ├── README.md
 ├── LICENSE
 ├── src/
 │ ├── robot_description/ # Robot URDF, RViz configs, launch files
 │ └── aruco_detector/ # ArUco detection and virtual camera nodes
-'''
+
 
 ## Packages
 
@@ -33,6 +33,7 @@ ros2_ws/
 ### Prerequisites
 - ROS2 Humble (on Ubuntu 22.04.5 LTS)
 - OpenCV with ArUco support
+- Rviz on ROS2
 
 ### Setup
 ```bash
