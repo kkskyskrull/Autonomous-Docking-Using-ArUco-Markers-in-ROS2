@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<robot name="test_bot">
+  
+  <link name="base_link">
+    <visual>
+      <geometry><box size="0.3 0.3 0.1"/></geometry>
+    </visual>
+  </link>
+  
+  <link name="left_wheel">
+    <visual>
+      <geometry><cylinder length="0.05" radius="0.05"/></geometry>
+    </visual>
+  </link>
+  
+  <link name="right_wheel">
+    <visual>
+      <geometry><cylinder length="0.05" radius="0.05"/></geometry>
+    </visual>
+  </link>
+  
+  <!-- JOINTS - THESE ARE ESSENTIAL -->
+  <joint name="left_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="left_wheel"/>
+    <origin xyz="0.0 0.15 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+  
+  <joint name="right_wheel_joint" type="continuous">
+    <parent link="base_link"/>
+    <child link="right_wheel"/>
+    <origin xyz="0.0 -0.15 0" rpy="0 0 0"/>
+    <axis xyz="0 1 0"/>
+  </joint>
+  
+</robot>

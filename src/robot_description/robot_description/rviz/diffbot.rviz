@@ -1,0 +1,24 @@
+Panels:
+  - Class: rviz_default_plugins/Displays
+    Name: Displays
+  - Class: rviz_default_plugins/Views
+    Name: Views
+Visualization Manager:
+  Class: ""
+  Displays:
+    - Name: RobotModel
+      Class: rviz_default_plugins/RobotModel
+      Enabled: true
+      Robot Description: robot_description
+      Visual Enabled: true
+      Collision Enabled: false
+    - Name: TF
+      Class: rviz_default_plugins/TF
+      Enabled: true
+  Global Options:
+    Fixed Frame: base_link
+  Views:
+    Current:
+      Class: rviz_default_plugins/TopDownOrtho
+      Name: TopDownOrtho
+      Target Frame: base_link
